@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: calc(100% - 68px);
+    margin-top: 68px;
+}
+
+/* Navbar Styling */
+
+#nav {
+    height: 68px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #1570EF;
+    padding: 16px;
+}
+
+.gitlogo {
+    width: 40px;
+    height: 40px;
+}
+
+.homelogo {
+    gap: 16px;
+}
+
+#nav a p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    padding-top: 16px;
+    color: #FFFFFF;
+}
+
+#nav a p:hover {
+    color: #101828;
+}
+
+nav h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.repobtn {
+    width: 128px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1570EF;
+}
+
+.repobtn:hover {
+    background: #1570EF;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+/* Hero Styling */
+#hero {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#hero h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+}
+
+#hero p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+}
+
+#hero a {
+    color: #1570EF;
+}
+
+#hero a:hover, .repo1 h2:hover {
+    color: #475467;
+}
+
+.herobtn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 56px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #1570EF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+/* Repository List */
+
+#repolist {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#repolist h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
+    padding-bottom: 20px;
+}
+
+.repocontainer {
+    width: 960px;
+    gap: 30px;
+}
+
+.repocard {
+    width: calc(33.33% - 20px);
+    height: 140px;
+    border: 1px solid #1570EF;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.repo1 {
+    gap: 8px;
+}
+
+.repo1 h2 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #1570EF;
+    max-width: 200px;
+}
+
+.repo1 p {
+    font-weight: 500;
+    font-size: 12px;
+    padding:1px 4px;
+    border: 1px solid #475467;
+    border-radius: 10px;
+    color: #475467;
+    margin-top: 2px;
+}
+
+.repo2 {
+    margin-top: 20px;
+    gap: 24px;
+}
+
+.repo3 {
+    gap: 2px;
+}
+
+.repo2 .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #1570EF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.repo2 p {
+    font-weight: 400;
+    font-size: 12px; 
+    color: #475467;  
+}
+
+.page {
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.page button {
+    width: 90px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #1570EF;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1570EF;  
+}
+
+.page button:not([disabled]):hover {
+    background: #1570EF;
+    color: #FFFFFF;
+}
+
+.page button:disabled {
+    border: 1px solid #475467;
+    color: #475467;
+}
+
+.search {
+    margin-top: 20px;
+    width: 300px;
+    height: 42px;
+    border-radius: 10px;
+    border: 1px solid #1570EF;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475467;
+    padding: 9px; 
+}
+
+.search:focus {
+    border: 1px solid #475467;
+    outline:  none;
+}
+
+.error {
+    padding-top: 40px;
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.errpage {
+    height: calc(100vh - 250px);
+}
+
+/* 404 */
+
+.notfound {
+    margin-top: 20px;
+}
+
+.notfound img {
+    width: 400px;
+    height: 400px;
+}
+
+.notfound h3 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #475467;  
+}
+
+.notfound a {
+    color: #1570EF;
+}
+
+/* Repo */
+
+#singlerepo {
+    margin-top: 120px;
+    height: calc(100vh - 250px);
+}
+
+.singlerepocard {
+    width: 500px;
+    height: 220px;
+    padding: 16px;
+    border: 2px solid #1570EF;
+    border-radius: 15px;
+}
+
+.singlerepocard h2 {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    color: #1570EF;
+}
+
+.singlerepocard p {
+    font-weight: 400;
+    font-size: 16px; 
+    color: #475467;
+}
+
+.singlerepocard .icons, .singlerepocard a {
+    color: #1570EF;
+}
+
+/* Footer */
+.footer {    
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #1570EF;
+}
+
+.foot {
+    padding: 20px 0px 4px;
+    gap: 16px;
+}
+
+.foot p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #475467;
+}
+
+.social {
+    gap: 16px;
+    margin-top: -18px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 575px) {
+    .repobtn {
+        display: none;
+    }
+
+    #nav {
+        gap: 16px;
+    }
+
+    #nav h3 {
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 8px;
+    }
+
+    #hero {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    #repolist {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    
+    #repolist h1 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    
+    .repocontainer {
+        width: 300px;
+        gap: 30px;
+    }
+    
+    .repocard {
+        width: calc(100%);
+        height: 140px;
+        border: 1px solid #1570EF;
+        border-radius: 15px;
+        padding: 12px;
+    }
+
+    #hero h1, #repolist h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .error {
+        padding-top: 40px;
+        color: #ff0000;
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+    
+    .errpage {
+        height: calc(100vh - 250px);
+    }
+
+    .notfound {
+        height: calc(100vh - 250px);
+    }
+
+    .notfound img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .singlerepocard {
+        width: 300px;
+        height: 420px;
+        padding: 16px;
+        border: 2px solid #1570EF;
+        border-radius: 15px;
+    }
+    
+    .repodetails {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+}
